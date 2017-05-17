@@ -11,6 +11,9 @@ getGifs();
 
 // when the user clicks on the add button, do the following
 $("#add-food").on("click", function(event) {
+	// if value is empty, dont add button, else do the following
+	if ($("#food-input").val() != ""){
+		
       // prevent form from submitting
       event.preventDefault();
 
@@ -25,6 +28,7 @@ $("#add-food").on("click", function(event) {
 	  
 	  // run function
 	  getGifs();
+	 }
 })
 
 
