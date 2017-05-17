@@ -39,7 +39,7 @@ function getGifs() {
 			  
 			  // Constructing the queryURL based on the value of a food. Also, sets a limit of 10 gifs.
 		      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
-		        food + "&api_key=dc6zaTOxFJmzC&limit=10";
+		        food + "&api_key=dc6zaTOxFJmzC&limit=12";
 		        
 			  // performing AJAX request
 		      $.ajax({
@@ -59,12 +59,14 @@ function getGifs() {
 			        //set a var that creates a div called .item
 		            var gifDiv = $("<div class='item'>");
 		            
+/*
 					//sets a var that pulls the "rating" element from the results array
 		            var rating = results[i].rating;
 		            
 					// creating a p tag and fiving it the rating text
 		            var p = $("<p>").text("Rating: " + rating);
 		            
+*/
 					// creating new image and giving it attributes for source, state, animmate, and still
 		            var foodImage = $("<img>");
 		            foodImage.attr({"src": results[i].images.fixed_height.url,
@@ -77,7 +79,7 @@ function getGifs() {
 		            foodImage.addClass("gif");
 		            
 					//prepending the gif and rating
-		            gifDiv.prepend(p);
+// 		            gifDiv.prepend(p);
 		            gifDiv.prepend(foodImage);
 		            
 					// prepends the gifDiv into the div already in the HTML

@@ -7,21 +7,27 @@
 
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Barrio|Karla" rel="stylesheet">
+
 </head>
 
 <body>
-	<h1>Treat Yo Self</h1>
-	
-	<div id="buttons">
+	<div id="main-container">
+		<h1>Treat Yo Self</h1>
+		
+		<div id="buttons"></div>
+		
+		<form>
+	    <span id="food-item"><input id="food-input" type="text" value="Add yours..."> <input id="add-food" value="Get Those Treats" type="submit"></span>
+	  	</form>
+	  
+	  	<div id="gallery">
+			<div id="gifs-appear-here">
+			</div>
+	  	</div>
 	</div>
-	
-	<form>
-    <span id="food-item">Add Food: <input id="food-input" type="text"> <input id="add-food" value="ADD" type="submit"></span>
-  	</form>
-  
-	<div id="gifs-appear-here">
-	</div>
-	
 <!-- 	JS -->
 <script src="app.js"></script>
 </body>
