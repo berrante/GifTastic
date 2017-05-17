@@ -38,7 +38,7 @@ function getGifs() {
 			  var food = $(this).attr("data-food");
 			  
 			  // Constructing the queryURL based on the value of a food. Also, sets a limit of 10 gifs.
-		      var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+		      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
 		        food + "&api_key=dc6zaTOxFJmzC&limit=12";
 		        
 			  // performing AJAX request
